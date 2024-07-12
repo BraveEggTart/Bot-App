@@ -5,5 +5,5 @@ RUN npm ci --production
 RUN npm cache clean --force
 ENV NODE_ENV="production"
 COPY . .
-RUN npm build
+RUN npm run build
 CMD [ "npm", "start" ]
